@@ -1,0 +1,20 @@
+<accordion [closeOthers]="true" style="width:100%;">
+  <accordion-group #groupval [isOpen]="">
+    <button accordion-heading >
+      Исходный текст
+    </button>
+    <div class="form-group">
+      <label for="inputText">Исходный текст</label>
+      <textarea class="form-control" id="inputText" rows="3" [(ngModel)]="rawText"></textarea>
+    </div>
+  </accordion-group>
+</accordion>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" [(ngModel)]="shouldBeMixed" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Перемешанный текст
+  </label>
+</div>
+
+<div>{{updatedText}}</div>
