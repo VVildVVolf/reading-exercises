@@ -13,8 +13,17 @@
 <div class="form-check">
   <input class="form-check-input" type="checkbox" [(ngModel)]="shouldBeMixed" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    Перемешанный текст
+    Перемешанный
   </label>
 </div>
 
-<div>{{updatedText}}</div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" [(ngModel)]="shouldRotating" id="defaultCheck2">
+    <label class="form-check-label" for="defaultCheck2">
+      Вращающийся
+    </label>
+</div>
+
+<app-spinned-text *ngIf="shouldRotating" [text]="updatedText"></app-spinned-text>
+
+<div *ngIf="!shouldRotating" >{{updatedText}}</div>

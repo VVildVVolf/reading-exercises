@@ -12,10 +12,11 @@ export class MainReplacerComponent implements OnInit {
 
   private rawText: string = "default text";
   private shouldBeMixed: boolean = true;
+  private shouldRotating: boolean = false;
 
   public get updatedText(): string {
     if (this.shouldBeMixed){
-      return this._wordMixer.Convert(this.rawText);
+     return this._wordMixer.Convert(this.rawText);
     } else {
       return this.rawText;
     }
