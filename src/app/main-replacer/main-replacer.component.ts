@@ -10,10 +10,10 @@ export class MainReplacerComponent implements OnInit {
 
   constructor(private _wordMixer: WordMixerService) { }
 
-  private rawText: string = "default text";
-  private shouldBeMixed: boolean = true;
-  private shouldRotating: boolean = false;
-  private shouldBeInverted: boolean = false;
+  public rawText: string = "default text";
+  public shouldBeMixed: boolean = true;
+  public shouldRotating: boolean = false;
+  public shouldBeInverted: boolean = false;
 
   public get updatedText(): string {
     if (this.shouldBeMixed){
