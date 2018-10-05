@@ -16,15 +16,15 @@
 }
 .spinner {
     -webkit-animation-name: rotate; 
-    -webkit-animation-duration: 2s; 
+    /* -webkit-animation-duration: 2s;  */
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: rotate; 
-    -moz-animation-duration: 2s; 
+    /* -moz-animation-duration: 2s;  */
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     animation-name: rotate; 
-    animation-duration: 2s; 
+    /* animation-duration: 2s;  */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -41,4 +41,14 @@
 @keyframes rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+}
+
+.inverted {
+    -moz-transform: scale(-1,1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    filter: FlipV;
+    -ms-filter: "FlipH"; 
+    display: inline-block;
 }

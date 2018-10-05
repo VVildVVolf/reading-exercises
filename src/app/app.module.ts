@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { CustomSpinnerComponent } from './custom-spinner/custom-spinner.component';
 import { SpinnedTextComponent } from './spinned-text/spinned-text.component';
+import { InvertedTextComponent } from './inverted-text/inverted-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainReplacerComponent,
     CustomSpinnerComponent,
-    SpinnedTextComponent
+    SpinnedTextComponent,
+    InvertedTextComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,9 @@ export class SpinnedTextComponent implements OnInit {
     }
   }
 
+  @Input()
+  public needBeInverted: boolean = false;
+
   public textAsArray:Array<string>;
 
   constructor() { }
